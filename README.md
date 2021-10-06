@@ -6,7 +6,7 @@ PassGen is a Modern Password Generator App for android written in java.
 
 ## Screenshots
 
-![App Screenshot](../ScreenShots/Screenshot_20211006-140214.png)
+![App Screenshot](PassGen/ScreenShots/Screenshot_20211006-140214.png?raw=true)
 
   
 ## 🔗 Social Media Links
