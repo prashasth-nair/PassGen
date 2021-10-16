@@ -1,6 +1,7 @@
 package com.example.passwordgenrator;
 
 import android.content.res.Configuration;
+import android.graphics.PorterDuff;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.material.slider.Slider;
 import com.google.android.material.switchmaterial.SwitchMaterial;
@@ -42,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         symbols = (SwitchMaterial) findViewById(R.id.symbols);
         slider = (Slider) findViewById(R.id.seekBar);
         result = (TextView) findViewById(R.id.textView);
-//        uppercase.setEnabled(false);
 
         final Handler handler = new Handler();
         final int delay = 100; // 100 milliseconds == 0.1 second
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 if (!lowercase.isChecked() && !numbers.isChecked() && !symbols.isChecked()) {
                     uppercase.setChecked(true);
+
                     uppercase.setEnabled(false);
                 } else {
                     uppercase.setEnabled(true);
@@ -82,17 +84,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        // Checks the orientation of the screen
-        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-            Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show();
-        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
-            Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
-        }
-    }
+//    @Override
+//    public void onConfigurationChanged(Configuration newConfig) {
+//        super.onConfigurationChanged(newConfig);
+//
+//        // Checks the orientation of the screen
+////        if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+////            Toast.makeText(this, "landscape", Toast.LENGTH_SHORT).show();
+////        } else if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+////            Toast.makeText(this, "portrait", Toast.LENGTH_SHORT).show();
+////        }
+//    }
 
 
     public static String generateRandomPassword(int max_length, boolean upperCase, boolean lowerCase, boolean numbers, boolean specialCharacters) {

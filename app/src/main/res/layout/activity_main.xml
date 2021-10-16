@@ -148,7 +148,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="true"
-                    android:theme="@style/SwitchTheme"
+                    app:trackTint="@drawable/bg_switch_states"
                     app:thumbTint="@color/white"
 
                     app:track="@drawable/switch_background" />
@@ -185,6 +185,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/SwitchTheme"
+                    app:trackTint="@drawable/bg_switch_states"
                     app:thumbTint="@color/white"
                     app:track="@drawable/switch_background" />
             </LinearLayout>
@@ -220,6 +221,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/SwitchTheme"
+                    app:trackTint="@drawable/bg_switch_states"
                     app:thumbTint="@color/white"
                     app:track="@drawable/switch_background" />
             </LinearLayout>
@@ -256,6 +258,7 @@
                     android:layout_height="wrap_content"
                     android:theme="@style/SwitchTheme"
                     app:thumbTint="@color/white"
+                    app:trackTint="@drawable/bg_switch_states"
                     app:track="@drawable/switch_background" />
             </LinearLayout>
 

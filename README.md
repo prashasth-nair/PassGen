@@ -1,5 +1,6 @@
 
 # PassGen
+![PassGen](app/src/main/res/raw/logo_size_invert.jpg?raw=true)
 
 PassGen is a Modern Password Generator App for android written in java.
 
