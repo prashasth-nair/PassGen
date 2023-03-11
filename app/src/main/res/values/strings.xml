@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PassGen</string>
+    <string name="password_generator">PassGen</string>
+    <string name="generated_password">GENERATED PASSWORD</string>
+    <string name="click_generate">Click Generate</string>
+    <string name="length">LENGTH</string>
+    <string name="_4">4</string>
+    <string name="_32">32</string>
+    <string name="include_uppercase">Include Uppercase</string>
+    <string name="include">INCLUDE</string>
+    <string name="include_lowercase">Include Lowercase</string>
+    <string name="include_numbers">Include Numbers</string>
+    <string name="include_symbols">Include Symbols</string>
+    <string name="generate_password">Generate Password</string>
+</resources>
